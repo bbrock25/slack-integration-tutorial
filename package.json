@@ -1,0 +1,23 @@
+{
+  "name": "slack-tutorial",
+  "version": "0.0.1",
+  "description": "Walking through a basic node-slack bot example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbrock25/slack-tutorial.git"
+  },
+  "author": "Bill Brock <william.e.brock@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bbrock25/slack-tutorial/issues"
+  },
+  "homepage": "https://github.com/bbrock25/slack-tutorial#readme",
+  "dependencies": {
+    "express": "^4.x.x",
+    "body-parser": "^1.x.x"
+  }
+}
