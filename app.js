@@ -5,6 +5,7 @@ var app = express();
 var port = process.env.PORT || 3000;
 
 var bot = require('./bot');
+var dicebot = require('./dicebot');
 
 // body parser middleware
 app.use(bodyParser.urlencoded( { extended: true}));
@@ -12,6 +13,7 @@ app.use(bodyParser.urlencoded( { extended: true}));
 // routes
 app.get('/', function(req, res) { res.status(200).send('Hello World');});
 app.post('/hello', bot);
+app.post('/roll', dicebot);
 
 // error handler
 app.use(function (err, req, res, next) {
